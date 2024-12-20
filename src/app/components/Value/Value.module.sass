@@ -1,0 +1,24 @@
+.valueContainer
+  position: relative
+  background-color: $purple100
+  min-height: 886px
+  display: flex
+  flex-direction: column
+  gap: 32px
+  padding: 6.4rem 2rem
+  clip-path: ellipse(200% 100% at 50% 0%)
+
+  
+@media (min-width: 768px)
+  .valueContainer
+    padding: 5.6rem 4.4rem 4.4rem
+    min-height: 596px
+
+@media (min-width: 1440px)
+  .valueContainer
+    padding: 8.8rem 8rem 14.4rem
+    min-height: 610px
+    clip-path: ellipse(120% 100% at 50% 0%)
+    flex-direction: row
+    justify-content: space-between
+  

@@ -1,0 +1,81 @@
+.valuePoint
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 24px
+
+.number
+  display: flex
+  width: 48px
+  height: 48px
+  border: solid  1px $purple500
+  border-radius: 50%
+  align-items: center
+  justify-content: center
+  flex-shrink: 0
+  flex-grow: 0
+  overflow: hidden
+
+  & > p
+    font-family: var(--font-fraunces)
+    line-height: 40%
+    color: $purple900
+    font-size: 2rem
+    font-weight: 600
+
+.textContainer
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 16px
+
+  &__subtitle
+    font-family: var(--font-fraunces)
+    line-height: 120%
+    font-weight: 600
+    font-size: 2.4rem
+    color: $purple900
+  
+  &__description
+    font-family: var(--font-manrope)
+    line-height: 180%
+    text-align: center
+    font-size: 1.6rem
+    color: $purple900
+
+  
+@media (min-width: 768px)
+  .valuePoint
+    flex-direction: row
+    gap: 56px
+
+  .textContainer
+    gap: 28px
+    align-items: flex-start
+
+    &__subtitle
+      font-size: 2.8rem
+    
+    &__description
+      text-align: left
+
+@media (min-width: 1440px)
+  .valuePoint
+    flex-direction: column
+  
+  .number
+    width: 56px
+    height: 56px
+
+    & > p
+      font-size: 2.4rem
+  
+  .textContainer
+    align-items: center
+
+    &__subtitle
+      font-size: 3.2rem
+    
+    &__description
+      text-align: center
+      font-size: 1.8rem

@@ -1,0 +1,131 @@
+.ctaContainer
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 11.2rem 2rem 0
+  min-height: 73.7rem
+
+  &__headshot
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 28rem
+    width: 33.5rem
+    gap: 8px
+    margin-bottom: -48px
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 3.2rem
+    padding: 3.2rem 3.2rem
+    background-color: $purple900
+    min-height: 39.3rem
+
+    & > h2
+      color: $white
+      font-family: var(--font-fraunces)
+      line-height: 120%
+      font-weight: 600
+      font-size: 3.2rem
+
+    & > p
+      color: $white
+      font-family: var(--font-manrope)
+      line-height: 180%
+      font-size: 1.6rem
+      font-weight: normal
+      text-align: center
+
+    & > button
+      background-color: $green
+      border: none
+      padding: 1.2rem 3.2rem
+      font-family: var(--font-manrope)
+      font-weight: bold
+      font-size: 1.6rem
+      line-height: 180%
+      color: $purple900
+
+  & > img
+    display: none
+    position: absolute
+    bottom: 0
+    right: 0
+    transform: translate(-25%, 55%)
+
+@media (min-width: 768px)
+  .ctaContainer
+    position: relative
+    flex-direction: row
+    padding: 11.2rem 4.4rem 0
+    min-height: 67rem
+
+    &__headshot
+      align-self: flex-start
+      height: auto
+      gap: 8px
+      margin-right: -105px
+
+    &__content
+      align-self: flex-end
+      margin-top: auto
+      background-color: $purple900
+      min-height: 39rem
+      min-width: 50.4rem
+      padding: 4.8rem 4.8rem
+      align-items: flex-start
+
+      & > h2
+        font-size: 4.8rem
+
+      & > p
+        text-align: left
+
+      & > button
+        font-size: 1.8rem
+
+    & > img
+      display: block
+
+@media (min-width: 1440px)
+  .ctaContainer
+    padding: 11.2rem 8rem 0
+    min-height: 69.1rem
+
+    &__headshot
+      height: 57.9rem
+      width: 47.7rem
+      position: relative
+      margin-right: 0
+      left: 100px
+      z-index: 0
+
+      & > img
+        position: absolute
+        top: 0
+        width: 44.7rem
+        height: 44.7rem
+        z-index: 0
+
+    &__content
+      height: 41.1rem
+      width: 73rem
+      padding: 6.4rem 6.4rem
+      bottom: 0
+      right: 0
+      z-index: 6
+
+      & > h2
+        font-size: 5.6rem
+
+      & > p
+        font-size: 1.8rem
+
+      & > button
+        font-size: 1.8rem
+
+    & > img
+      z-index: 7
+      transform: translate(-120%, 30%)
