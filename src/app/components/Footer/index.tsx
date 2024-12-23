@@ -1,4 +1,8 @@
 import Image from 'next/image'
+import FacebookIcon from '../../../../public/images/icon-facebook.svg'
+import TwitterIcon from '../../../../public/images/icon-twitter.svg'
+import InstagramIcon from '../../../../public/images/icon-instagram.svg'
+
 import styles from './Footer.module.sass'
 
 const Footer = () => (
@@ -10,24 +14,9 @@ const Footer = () => (
       height={25}
     />
     <div className={styles.footerContainer__icons}>
-      <Image
-        src={'/images/icon-facebook.svg'}
-        alt='icon facebook'
-        width={20}
-        height={20}
-      />
-      <Image
-        src={'/images/icon-twitter.svg'}
-        alt='twitter facebook'
-        width={20}
-        height={20}
-      />
-      <Image
-        src={'/images/icon-instagram.svg'}
-        alt='icon instagram'
-        width={20}
-        height={20}
-      />
+      <FacebookIcon />
+      <TwitterIcon />
+      <InstagramIcon />
     </div>
   </div>
 )
