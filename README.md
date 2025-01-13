@@ -68,8 +68,8 @@ _If the images are not visible, please check the file path or ensure the screens
 This resources were essential in resolving the issue where the clip-path layer was overlapping other elements with the same parent.
 By understanding how z-index interacts with clip-path, I was able to adjust the stacking order and ensure that the hero layer no
 longer covered the background image.
-[Understanding z-index](https://ishadeed.com/article/understanding-z-index/?utm_source=chatgpt.com)
-[Stack Overflow discussion on clip-path and z-index](https://stackoverflow.com/questions/57327586/why-does-clip-path-and-other-properties-affect-the-stacking-order-z-index-of?utm_source=chatgpt.com)
+[Understanding z-index](https://ishadeed.com/article/understanding-z-index/)
+[Stack Overflow discussion on clip-path and z-index](https://stackoverflow.com/questions/57327586/why-does-clip-path-and-other-properties-affect-the-stacking-order-z-index-of)
 
 These resources helped me learn how to modify the color of SVG icons through CSS, enabling me to easily customize the appearance of icons on my landing page:
 [Stack Overflow: Manipulating External SVGs with CSS](https://es.stackoverflow.com/questions/299519/c%C3%B3mo-manipular-un-svg-externo-con-css) - Explained how to target external SVG files for styling.
